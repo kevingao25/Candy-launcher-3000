@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+    <link rel="stylesheet" href="lib/bootstrap.min.css" />
+    <script src="lib/fontawesome.min.js"></script>
+
+    <link rel="stylesheet" href="shared.css" />
+
+    <title>Pseudobytes</title>
+</head>
+<body>
+    <div class="navbar navbar-expand-md bg-primary navbar-dark text-center mb-2">
+        <div class="container-fluid justify-content-center">
+            <a href="/" class="navbar-brand mr-0">
+                <i class="fas fa-rocket"></i> Pseudobytes
+            </a>
+        </div>
+    </div>
+
+    <main>
+        <div id="wrapper" class="container">
+            <div id="noMessagesDiv">
+                <div class="alert alert-success" role="alert">
+                    <h4 class="alert-heading">
+                        <i class="fas fa-check"></i> No Alerts
+                    </h4>
+
+                    There is currently no one detected.
+                </div>
+            </div>
+
+            <div id="messagesDiv" hidden>
+                <h1 class="text-center">Detected</h1>
+
+                <img id="picture" />
+
+                <div class="my-2"></div>
+
+                <div class="text-center">
+                    <div class="btn-group" role="group">
+                        <button id="shootButton" class="btn btn-success btn-lg">Shoot!</button>
+                        <button id="noShootButton" class="btn btn-danger btn-lg">Don't Shoot!</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <hr />
+            <p class="small mb-2">&copy; 2020 - Pseudobytes</p>
+        </div>
+    </footer>
+
+    <script src="lib/jquery.min.js"></script>
+    <script src="lib/bootstrap.bundle.min.js"></script>
+
+    <script src="lib/axios.min.js"></script>
+    <script src="lib/base64.js"></script>
+
+    <script src="index.js"></script>
+</body>
+</html>
